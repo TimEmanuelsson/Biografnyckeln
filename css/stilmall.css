@@ -154,7 +154,8 @@ img
 
 .flip-container, .front, .back {
 	width: 100px;
-	height: 100px;
+	height: 350px;
+	padding:1px 25px 15px 25px;
 }
 
 /* flip speed goes here */
@@ -172,6 +173,7 @@ img
 	transform-style: preserve-3d;
 
 	position: relative;
+	
 }
 
 /* hide back of pane during swap */
@@ -185,6 +187,7 @@ img
 	position: absolute;
 	top: 0;
 	left: 0;
+	
 }
 
 /* front pane, placed above back */
@@ -199,6 +202,7 @@ img
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    
 }
 
 
