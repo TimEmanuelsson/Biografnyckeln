@@ -2,12 +2,13 @@ body
 {
     font-family: "Helvetica", sans-serif;
     background:#F5F5E6;
+    
 }
 
 header
 {
     background:#733232;
-    padding-top:30px;
+    padding-top:50px;
     padding-bottom:10px;
 }
 
@@ -76,11 +77,13 @@ h1
     text-align:left;
 }
 
-p
+p.helptext
 {
     font-size:0.8em;
     text-align:left;
     margin:10px;
+    color:#333;
+    line-height:20px;
 }
 
 
@@ -118,13 +121,13 @@ form
     margin-bottom:30px;
 }
 
-button[type=submit]
+button
 {
   -webkit-appearance: none; -moz-appearance: none;
  display: block;
  
  margin: 1.5em;
- margin-left:3px;
+ margin-left:2px;
  font-size: 1em; line-height: 2.5em;
  color: #333;
  font-weight: bold;
@@ -151,88 +154,87 @@ select
     margin:5px;
 }
 
-.field input
+.field2
+{
+    color:gray;
+    margin:5px;
+    margin-top:50px;
+}
+
+
 
 img
 {
-    max-width:100%;
+    width:100%;
 }
 
-.EEET
+
+
+
+.passbook 
 {
-    max-width:250px;
-}
+	position: relative;
+	max-width: 100%;
 
-.EEETT
-{
-    max-width:250px;
-}
-
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000;
-	margin:30px;
-}
-	/* flip the pane when hovered */
-	.flip-container:active .flipper, .flip-container.active .flipper {
-  -o-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 100px;
-	height: 350px;
-	padding:1px 25px 15px 25px;
-}
-
-/* flip speed goes here */
-.flipper {
-    -o-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -webkit-transition: 0.6s;
-	transition: 0.6s;
-	
-	-o-transform-style:preserve-3d;
-	-ms-transform-style:preserve-3d;
-	-moz-transform-style:preserve-3d;
-	-webkit-transform-style:preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 
-	position: relative;
-	
+	-webkit-transition: 2.0s;
+	-moz-transition: 2.0s;
+	transition: 2.0s;
+
+	margin:10px;
 }
 
-/* hide back of pane during swap */
-.front, .back {
-    -o-backface-visibility:hidden;'
-    -ms-backface-visibility:hidden;
-    -moz-backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
-	backface-visibility: hidden;
+.card 
+{   
+    position: relative;  
+  
+    -webkit-backface-visibility: hidden;  
+    -moz-backface-visibility: hidden;  
+    backface-visibility: hidden;  
+}  
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	
+.front 
+{  
+    z-index: 1;  
+}  
+
+
+.back 
+{  
+    -webkit-transform: rotateY(180deg);  
+    -moz-transform: rotateY(180deg);  
+    transform: rotateY(180deg); 
+    border:1px;
+}  
+
+.rotate-3d {  
+    -webkit-transform: rotateY(180deg);  
+    -moz-transform: rotateY(180deg);  
+    transform: rotateY(180deg);  
+}  
+
+.info
+{
+         -webkit-appearance: none; -moz-appearance: none;
+         list-style:none;
+         text-align:center;
+         text-decoration:none;
+         display: block;
+         margin: 1.5em;
+         margin-left:2px;
+         font-size: 1em; line-height: 2.5em;
+         color: #333;
+         font-weight: bold;
+         height: 2.5em; width: 100%;
+         background: #fdfdfd; background: -moz-linear-gradient(top, #fdfdfd 0%, #bebebe 100%); 
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#bebebe)); 
+         background: -webkit-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+         background: -o-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+         background: -ms-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+         background: linear-gradient(to bottom, #fdfdfd 0%,#bebebe 100%);
+         border: 1px solid #bbb;
+         -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
 }
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-}
-
-/* back, initially hidden pane */
-.back {
-    -o-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    
-}
-
-
