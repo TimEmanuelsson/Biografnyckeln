@@ -32,13 +32,60 @@
         <main>
             <h1>Köp biljett</h1>
             
+            <p>Här väljer du vilken film du vill köpa biljetter till. Därefter har du möjlighet att välja antal biljetter och vilken rad du vill sitta på.</p>
             <form>
-               
+                <div class="field"><label for="movie">Välj film:</label></div>
+                <select id="selection" name="moviechoice">
+                <option value="">Tryck för att välja film..</option>
+                <option value="1">Film 1</option>
+                <option value="2">Film 2</option>
+                <option value="3">Film 3</option>
+                <option value="4">Film 4</option>
+                <option value="5">Film 5</option>
+                </select>
+                
+                <div class="field"><label for="movie">Antal biljetter:</label></div>
+                <select id="selection" name="ticketchoice">
+                <option value="">Tryck för att välja antal biljetter..</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                </select>
+                
+                <div class="field"><label for="movie">Välj rad:</label></div>
+                <select id="selection" name="rowchoice">
+                <option value="">Tryck för att välja rad..</option>
+                <option value="1">Rad 1</option>
+                <option value="2">Rad 2</option>
+                <option value="3">Rad 3</option>
+                <option value="4">Rad 4</option>
+                <option value="5">Rad 5</option>
+                <option value="6">Rad 6</option>
+                <option value="7">Rad 7</option>
+                <option value="8">Rad 8</option>
+                <option value="9">Rad 9</option>
+                <option value="10">Rad 10</option>
+                <option value="11">Rad 11</option>
+                <option value="12">Rad 12</option>
+                <option value="13">Rad 13</option>
+                <option value="14">Rad 14</option>
+                <option value="15">Rad 15</option>
+                </select>
+            </form>
+            
+            <p>I dessa två fält skriver du sedan in ditt fullständiga namn och det mobilnummer du vill att dina biljetter ska skickas till. Du visar sedan bara upp det mottagna sms:et i kassan när du kommer hit.</p>
+
+            <!-- Här kan kunden välja film, hur många biljetter, vilken rad och vilket stolsnummer. Därefter kan kunden även skriva in sitt namn och telefonnumret biljetten ska skickas till. Sedan trycker man på "Till kassa" för att komma till kassa-sidan."-->
+            <form>
                 <div class="field"><label for="name">Namn:</label></div>   <input type="text" name="name" placeholder="Ditt för- och efternamn..">
-                <div class="field"><label for="tel">Mobil nummer:</label></div> <input type="tel" name="tel"placeholder="Mobil nummer..">
-                <div class="field"><label for="number">Antal:</label></div> <input type="number" name="number"placeholder="Antal..">
-                <input class="submit" type="submit" value="Skicka">
-        
+                <div class="field"><label for="tel">Mobil nummer:</label></div>  <input type="tel" name="tel"placeholder="Ditt mobilnummer..">
+                <button type=submit>Till kassan</button>
+        </form>
+
                 
     <footer>
         Ansvarig utgivare: Andreas Lengqvist och Tim Emanuelsson - Copyright 2013 - Biograf Nyckeln -

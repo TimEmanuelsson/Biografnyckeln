@@ -85,7 +85,7 @@ p
 
 
 
-input[type=text], input[type=email]
+input[type=text], input[type=mail], input[type=tel], input[type=number], select
 {
   -webkit-appearance: none; -moz-appearance: none;
   display: block;
@@ -115,6 +115,34 @@ form
     margin:10px;
     margin-right:30px;
     margin-top:30px;
+    margin-bottom:30px;
+}
+
+button[type=submit]
+{
+  -webkit-appearance: none; -moz-appearance: none;
+ display: block;
+ 
+ margin: 1.5em;
+ margin-left:3px;
+ font-size: 1em; line-height: 2.5em;
+ color: #333;
+ font-weight: bold;
+ height: 2.5em; width: 100%;
+ background: #fdfdfd; background: -moz-linear-gradient(top, #fdfdfd 0%, #bebebe 100%); 
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#bebebe)); 
+ background: -webkit-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+ background: -o-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+ background: -ms-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+ background: linear-gradient(to bottom, #fdfdfd 0%,#bebebe 100%);
+ border: 1px solid #bbb;
+ -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
+    
+}
+
+select
+{
+    background:white;
 }
 
 .field
@@ -122,6 +150,8 @@ form
     color:gray;
     margin:5px;
 }
+
+.field input
 
 img
 {
