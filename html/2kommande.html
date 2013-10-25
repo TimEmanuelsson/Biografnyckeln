@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="viewport" content="width:device-width, initial-scale=1" /> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>  
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
         <title>Biograf Nyckeln</title>
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" media="only screen and (max-width:481px)" href="../css/stilmall.css" />
@@ -15,7 +15,7 @@
         <header>
     
             
-        <nav>
+        <nav class="headmenu">
             <ul>
         
                 <li><a href="1start.html">Start</a></li>
@@ -23,7 +23,6 @@
                 <li><a href="3biljett.html">Köp biljett</a></li>
                 <li><a href="4hitta.html">Hitta hit</a></li>
                 <li><a href="5kontakta.html">Kontakta oss</a></li>
-                <li><a href="6gottochblandat.html">Gott och blandat</a></li>
                 <li><a href="7faq.html">FAQ</a></li>
                 
             </ul>
@@ -36,37 +35,75 @@
             <h1>Kommande filmer</h1>
                 
                 
-                
-                
-<section class="passbook">  
-    <div class="card front">  
-        <img class="posters" src="../bilder/hobbit_2.jpg">  
- 
-    </div>  
-    <div class="card back">  
-        <p>Bilbo är BÖÖÖÖÖG..</p>
-                <a href="http://www.w3schools.com/">Visit W3Schools</a>
+<div class="container">
+    <div class="card">
+        <div class="face face1"></div>
+        <div class="face face2"></div>
+    </div>
 
-    </div>  
-</section>  
-
-    <ul>
-        <li><a href="" class="info flip">Mer info</a></li>
-        <li><a href="3biljett.html" class="info">Köp biljett</a></li>
+    <ul class="store">
+        <li>
+            <div class="content content1">1</div>
+        </li>
+        <li>
+            <div class="content content2">i</div>
+        </li>
+        <li>
+            <div class="content content3">3</div>
+        </li>
+        <li>
+            <div class="content content4">4</div>
+        </li>
     </ul>
+</div>
 
+<div class="buttons">
+    <input type="button" id="flip1" value="Poster"/>
+    <input type="button" id="flip2" value="Mer info"/>
+    <input type="button" value="Köp biljett" onclick="location.href='3biljett.html#gotobiljett';">
+    <input type="button" id="flip3" value="Se trailer"/>
+</div>
+
+    
+    
         </main>
 
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+var topCard = 1;
+var facingUp = true;
 
+function flipCard(n) {
+    if (topCard === n) return;
 
-<script type="text/javascript">  
-    $(document).ready(function(){  
-        $('a.flip').click(function(event){  
-            $('.passbook').toggleClass('rotate-3d');  
-            event.preventDefault();  
-        });  
-    });  
-</script>  
+    // Replace the contents of the current back-face with the contents
+    // of the element that should rotate into view.
+    var curBackFace = $('.' + (facingUp ? 'face2' : 'face1'));
+    var nextContent = $('.store' + n).html(); 
+    var nextContent = $('.store li:nth-child(' + n + ')').html(); 
+    curBackFace.html(nextContent);
+
+    // Rotate the content
+    $('.card').toggleClass('flipped');
+    topCard = n;
+    facingUp = !facingUp;
+}
+
+$('#flip1').on('click', function(){ flipCard(1); });
+$('#flip2').on('click', function(){ flipCard(2); });
+$('#flip3').on('click', function(){ flipCard(3); });
+
+$(document).ready(function(){
+    // Add the appropriate content to the initial "front side"
+    var frontFace = $('.face1');
+    var frontContent = $('.store li:first-child').html(); 
+    frontFace.html(frontContent);
+});
+
+});//]]>  
+
+</script>
+
 
     <footer>
         Ansvarig utgivare: Andreas Lengqvist och Tim Emanuelsson - Copyright 2013 - Biograf Nyckeln -

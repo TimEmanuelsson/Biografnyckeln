@@ -13,7 +13,7 @@
         <header>
     
             
-        <nav>
+        <nav class="headmenu">
             <ul>
         
                 <li><a href="1start.html">Start</a></li>
@@ -21,8 +21,7 @@
                 <li><a href="3biljett.html" class="current">Köp biljett</a></li>
                 <li><a href="4hitta.html">Hitta hit</a></li>
                 <li><a href="5kontakta.html">Kontakta oss</a></li>
-                <li><a href="6gottochblandat.html">Gott och blandat</a></li>
-                <li><a href="7faq.html">FAQ</a></li>
+                <li><a id="gotobiljett" href="7faq.html">FAQ</a></li>
                 
             </ul>
         </nav>
@@ -30,10 +29,10 @@
 
 <!-- Här ligger sidans unika kod-->
         <main>
-            <h1>Köp biljett</h1>
+            <h1 >Köp biljett</h1>
                             <!-- Här kan kunden välja film, hur många biljetter, vilken rad och vilket stolsnummer. Därefter kan kunden även skriva in sitt namn och telefonnumret biljetten ska skickas till. Sedan trycker man på "Till kassa" för att komma till kassa-sidan."-->
 
-            <p class="helptext">Här väljer du vilken film du vill köpa biljetter till. Därefter har du möjlighet att välja antal biljetter och vilken rad du vill sitta på. I de två nedersta text fälten skriver du sedan in ditt fullständiga namn och det mobilnummer du vill att dina biljetter ska skickas till. Du visar sedan upp det mottagna texmeddelandet i kassan när du kommer hit.</p> <p class="helptext">Slutligen trycker du på "Till kassan"-knappen för att gå vidare till betalningmetoderna, där du också som först får bekräfta ditt köp.</p>
+            <p class="helptext">Här väljer du vilken film du vill köpa biljetter till. Därefter har du möjlighet att välja antal biljetter och vilken rad du vill sitta på.</p> <p class="helptext">I de två nedersta text fälten skriver du sedan in ditt fullständiga namn och det mobilnummer du vill att dina biljetter ska skickas till. Du visar sedan upp det mottagna texmeddelandet i kassan när du kommer hit.</p> <p class="helptext">Slutligen trycker du på "Till kassan"-knappen för att gå vidare till betalningmetoderna, där du också som först får bekräfta ditt köp.</p>
 </p>
                 <form>
                     <div class="field"><label for="movie">Välj film:</label></div>
@@ -77,9 +76,12 @@
                     <option value="14">Rad 14</option>
                     <option value="15">Rad 15</option>
                     </select>
+                    
+
                 <div class="field2"><label for="name">Namn:</label></div>   <input type="text" name="name" placeholder="Ditt för- och efternamn..">
-                <div class="field"><label for="tel">Mobil nummer:</label></div>  <input type="tel" name="tel"placeholder="Ditt mobilnummer..">
+                <div class="field"><label for="tel">Mobilnummer:</label></div>  <input type="tel" name="tel"placeholder="Ditt mobilnummer..">
                 <button type=submit>Till kassan</button>
+            
         </form>
 
         </main>

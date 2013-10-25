@@ -12,7 +12,7 @@ header
     padding-bottom:10px;
 }
 
-nav
+nav.headmenu
 {
     float:inherit;
     
@@ -21,7 +21,7 @@ nav
     margin-left:10px;
 }
 
-nav a
+nav.headmenu a
 {
     display:block;
     background:#3B3B3B;
@@ -39,19 +39,19 @@ nav a
     box-shadow:0px 0px 50px black;
 }
 
-nav a.current
+nav.headmenu a.current
 {
     background:white;
     color:#303030;
     text-align:right;
 }
 
-nav a:hover
+nav.headmenu a:hover
 {
     background:#818181;
 }
 
-.current:hover
+nav.headmenu a.current:hover
 {
     background:white;
 }
@@ -165,84 +165,71 @@ select
 
 img
 {
-    width:100%;
+    max-width:100%;
 }
 
 
 
 
-.passbook 
-{
-	position: relative;
-	max-width: 100%;
+.container {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    margin: 0 auto 40px auto;
 
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-
-	-webkit-transition: 2.0s;
-	-moz-transition: 2.0s;
-	transition: 2.0s;
-
-	margin:10px;
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+        -ms-perspective: 800px;
+         -o-perspective: 800px;
+            perspective: 800px;
 }
+.container .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
-.card 
-{   
-    position: relative;  
-  
-    -webkit-backface-visibility: hidden;  
-    -moz-backface-visibility: hidden;  
-    backface-visibility: hidden;  
-}  
+    -webkit-transition: -webkit-transform 2s;
+       -moz-transition:    -moz-transform 2s;
+        -ms-transition:     -ms-transform 2s;
+         -o-transition:      -o-transform 2s;
+            transition:         transform 2s;
 
-.front 
-{  
-    z-index: 1;  
-}  
-
-
-.back 
-{  
-    -webkit-transform: rotateY(180deg);  
-    -moz-transform: rotateY(180deg);  
-    transform: rotateY(180deg); 
-}  
-
-
-.rotate-3d {  
-    -webkit-transform: rotateY(180deg);  
-    -moz-transform: rotateY(180deg);  
-    transform: rotateY(180deg);  
-}  
-
-.info
-{
-         -webkit-appearance: none; -moz-appearance: none;
-         list-style:none;
-         text-align:center;
-         text-decoration:none;
-         margin: 1.5em;
-         margin-left:5px;
-         font-size: 1em; line-height: 2.5em;
-         color: #333;
-         font-weight: bold;
-         height: 2.5em; width: 50%;
-         padding-left:20px;
-         padding-right:20px;
-         padding-top:10px;
-         padding-bottom:10px;
-         background: #fdfdfd; background: -moz-linear-gradient(top, #fdfdfd 0%, #bebebe 100%); 
-         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#bebebe)); 
-         background: -webkit-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
-         background: -o-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
-         background: -ms-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
-         background: linear-gradient(to bottom, #fdfdfd 0%,#bebebe 100%);
-         border: 1px solid #bbb;
-         -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
+.container .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 140px;
+    font-weight: bold;
+    line-height: 260px;
+    color: #fff;
+    text-align: center;
 
-li
-{
-    display:inline;
+}
+.container .card.flipped,
+.container .card .face2 {
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+         -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+.container .card .face .content1 {background-image:url('../bilder/hobbit_2.jpg');}
+.container .card .face .content1 {background-size: 350px 300px;}
+.container .card .face .content1 {background-repeat:no-repeat;}
+.container .card .face .content2 {background-color: #7da;}
+.container .card .face .content3 {background-color: #d7a;}
+.container .card .face .content4 {background-color: #fad997;}
+
+.store {
+    display: none;
+}
+.buttons {
+    text-align: center;
 }
