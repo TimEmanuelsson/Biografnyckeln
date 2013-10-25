@@ -7,12 +7,13 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
         <title>Biograf Nyckeln</title>
         <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/stilmall_webb.css" />
         <link rel="stylesheet" media="only screen and (max-width:481px)" href="../css/stilmall.css" />
     </head>
     <body>
     <div id="container">    
 
-        <header>
+        <header class="head">
     
             
         <nav class="headmenu">
@@ -23,7 +24,7 @@
                 <li><a href="3biljett.html">Köp biljett</a></li>
                 <li><a href="4hitta.html">Hitta hit</a></li>
                 <li><a href="5kontakta.html">Kontakta oss</a></li>
-                <li><a href="7faq.html">FAQ</a></li>
+                <li><a href="6faq.html">FAQ</a></li>
                 
             </ul>
         </nav>
@@ -64,7 +65,34 @@
     <input type="button" id="flip3" value="Se trailer"/>
 </div>
 
-    
+    <div class="container">
+    <div class="card">
+        <div class="face face1"></div>
+        <div class="face face2"></div>
+    </div>
+
+    <ul class="store">
+        <li>
+            <div class="content content1">1</div>
+        </li>
+        <li>
+            <div class="content content2">i</div>
+        </li>
+        <li>
+            <div class="content content3">3</div>
+        </li>
+        <li>
+            <div class="content content4">4</div>
+        </li>
+    </ul>
+</div>
+
+<div class="buttons">
+    <input type="button" id="flip1" value="Poster"/>
+    <input type="button" id="flip2" value="Mer info"/>
+    <input type="button" value="Köp biljett" onclick="location.href='3biljett.html#gotobiljett';">
+    <input type="button" id="flip3" value="Se trailer"/>
+</div>
     
         </main>
 
