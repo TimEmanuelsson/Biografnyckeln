@@ -1,4 +1,124 @@
 body
 {
     background:black;
+    max-width:100%;
+}
+
+header
+{
+    float:right;
+    background-color:black;
+    background:url(../bilder/biohead2.png) no-repeat;
+    background-size: 160px 746px;
+    width:160px;
+    height:746px;
+    
+}
+
+
+nav.headmenu
+{
+    float:inherit;
+    max-width:100%;
+    color:white;
+    margin-left:10px;
+}
+
+nav.headmenu a
+{
+    display:block;
+    background:#3B3B3B;
+    color:white;
+    max-width:90%;
+    padding:10px 10px;
+    text-decoration:none;
+    font-weight:normal;
+    text-transform:uppercase;
+    line-height:2em;
+    letter-spacing:0.1em;
+    border-radius:5px;
+    margin-bottom:2px;
+    border-top:1px ridge #F5F5E6;
+    box-shadow:0px 0px 50px black;
+}
+
+nav.headmenu a.current
+{
+    background:white;
+    color:#303030;
+    text-align:right;
+}
+
+nav.headmenu a:hover
+{
+    background:#818181;
+}
+
+nav.headmenu a:active
+{
+    background:#F2F2F2;
+}
+
+nav.headmenu a.current:hover
+{
+    background:white;
+}
+
+header
+{
+    float:right;
+    background-color:black;
+    background:url(../bilder/biohead2.png) no-repeat;
+    background-size: 160px 746px;
+    width:160px;
+    height:746px;
+    
+}
+
+
+nav.headmenu
+{
+    float:inherit;
+    max-width:100%;
+    color:white;
+}
+
+nav.headmenu a
+{
+    display:block;
+    background:#3B3B3B;
+    color:white;
+    max-width:90%;
+    padding:10px 10px;
+    text-decoration:none;
+    font-weight:normal;
+    text-transform:uppercase;
+    line-height:2em;
+    letter-spacing:0.1em;
+    border-radius:5px;
+    margin-bottom:2px;
+    border-top:1px ridge #F5F5E6;
+    box-shadow:0px 0px 50px black;
+}
+
+nav.headmenu a.current
+{
+    background:white;
+    color:#303030;
+    text-align:right;
+}
+
+nav.headmenu a:hover
+{
+    background:#818181;
+}
+
+nav.headmenu a:active
+{
+    background:#F2F2F2;
+}
+
+nav.headmenu a.current:hover
+{
+    background:white;
 }
