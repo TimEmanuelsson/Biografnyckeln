@@ -2,7 +2,7 @@ body
 {
     font-family: "Helvetica", sans-serif;
     background:#F5F5E6;
-    margin:auto;margin:auto;
+    margin:auto;
 }
 
 header
@@ -10,26 +10,23 @@ header
     display:none;
 }
 
-nav
-{
-    background:#733232;
-    padding:40px 0 10px 20px;
-}
-
-nav.headmenu
+nav#headmenu
 {
     float:inherit;
     max-width:100%;
     color:white;
+    background:#733232;
+    padding:40px 10px 10px 10px;
 
 }
 
-nav.headmenu a
+nav#headmenu a
 {
+    float:none;
     display:block;
     background:#3B3B3B;
     color:white;
-    max-width:90%;
+    max-width:100%;
     padding:10px;
     text-decoration:none;
     font-weight:normal;
@@ -40,26 +37,26 @@ nav.headmenu a
     margin-bottom:2px;
     border-top:1px ridge #F5F5E6;
     box-shadow:0px 0px 50px black;
-}
+    }
 
-nav.headmenu a.current
+nav#headmenu a.current
 {
     background:white;
     color:#303030;
     text-align:right;
 }
 
-nav.headmenu a:hover
+nav#headmenu a:hover
 {
     background:#818181;
 }
 
-nav.headmenu a:active
+nav#headmenu a:active
 {
     background:#F2F2F2;
 }
 
-nav.headmenu a.current:hover
+nav#headmenu a.current:hover
 {
     background:white;
 }
