@@ -95,9 +95,18 @@ p.helptext
     line-height:20px;
 }
 
+/*hjälptext med marginal. FIXAAAAAA*/
+p.helptext2
+{
+    font-size:0.8em;
+    text-align:left;
+    margin:10px;
+    color:#333;
+    line-height:20px;
+}
 
 
-input[type=text], input[type=mail], input[type=tel], input[type=number], select
+input[type=text], input[type=email], input[type=tel], input[type=number], select
 {
   -webkit-appearance: none; -moz-appearance: none;
   display: block;

@@ -1,13 +1,19 @@
 body
 {
-    background:black;
+    background:#141414;
     max-width:100%;
+    text-align: center;
     font-family: "Helvetica", sans-serif;
 }
 
 header
 {
-    background-image:url('../bilder/biohead2.png');
+    display:none;
+}
+
+#container
+{
+    width:100%
 }
 
 nav#headmenu
@@ -21,7 +27,6 @@ nav#headmenu
 
 nav#headmenu ul
 {
-   clear:left;
    float:left;
    list-style:none;
    margin:0;
@@ -33,53 +38,168 @@ nav#headmenu ul
 
 nav#headmenu li
 {
-     display:block;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   position:relative;
-   right:50%;
+    float:left;
+    width:150px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
 }
 
 nav#headmenu li a
 {
     display:block;
-    margin:0 0 0 1px;
-    background:#3B3B3B;
     color:white;
     text-decoration:none;
-    line-height:1.3em;
-    padding:10px;
+    font-size:0.9em;
+    padding:10px 25px 10px 25px;
     font-weight:normal;
-    text-transform:uppercase;
-    line-height:1.2em;
     letter-spacing:0.1em;
-    border-radius:3px;
-    margin-left:2px;
-    border-top:1px ridge #F5F5E6;
-    box-shadow:5px 5px 70px 10px #1E1E1E;
+    box-shadow:4px 4px 7px black;
+    border-left:1px ridge #F5F5E6;
+    border-right:1px ridge black;
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#818181), color-stop(100%,#3B3B3B)); 
+    background: -webkit-linear-gradient(top, #818181 0%,#3B3B3B 100%); 
+    background: -o-linear-gradient(top, #818181 0%,#3B3B3B 100%); 
+    background: -ms-linear-gradient(top, #818181 0%,#3B3B3B 100%); 
+    background: linear-gradient(to bottom, #818181 0%,#3B3B3B 100%);
+}
+
+nav#headmenu li:first-child a
+{
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border-left:1px ridge #F5F5E6;
+}
+
+nav#headmenu li:last-child a
+{
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border-right:1px ridge gray;
 }
 
 nav#headmenu a.current
 {
-    background:white;
     color:#303030;
-    text-align:right;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E1E1E1), color-stop(100%,#FFFFFF)); 
+    background: -webkit-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
+    background: -o-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
+    background: -ms-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
+    background: linear-gradient(to bottom, #E1E1E1 0%,#FFFFFF 100%);
 }
 
 nav#headmenu a:hover
 {
-    background:#818181;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D1D1D1), color-stop(100%,#818181)); 
+    background: -webkit-linear-gradient(top, #D1D1D1 0%,#818181 100%); 
+    background: -o-linear-gradient(top, #D1D1D1 0%,#818181 100%); 
+    background: -ms-linear-gradient(top, #D1D1D1 0%,#818181 100%); 
+    background: linear-gradient(to bottom, #D1D1D1 0%,#818181 100%);
 }
 
 nav#headmenu a:active
 {
-    background:#F2F2F2;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EBEBEB), color-stop(100%,#B9B9B9)); 
+    background: -webkit-linear-gradient(top, #EBEBEB 0%,#B9B9B9 100%); 
+    background: -o-linear-gradient(top, #EBEBEB 0%,#B9B9B9 100%); 
+    background: -ms-linear-gradient(top, #EBEBEB 0%,#B9B9B9 100%); 
+    background: linear-gradient(top bottom, #EBEBEB 0%,#B9B9B9 100%);
 }
 
 nav#headmenu a.current:hover
 {
-    background:white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E1E1E1), color-stop(100%,#FFFFFF)); 
+    background: -webkit-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
+    background: -o-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
+    background: -ms-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
+    background: linear-gradient(to bottom, #E1E1E1 0%,#FFFFFF 100%);
 }
 
+
+main
+{
+    clear:both;
+    overflow:auto;
+    width:70%;
+    margin:0 auto;
+    margin-bottom:50px;
+    padding:20px;
+    background:#F5F5E6;
+    border-left:1px solid#B9B9AA;
+    border-top:1px solid#B9B9AA;
+    border-right:2px ridge #B9B9AA;
+    border-bottom:2px ridge #B9B9AA;
+    border-radius:12px;
+    box-shadow:5px 5px 10px black;
+    text-align:left;
+}
+
+main#moviemain
+{
+    background:#141414;
+    border:none;
+    box-shadow:none;
+}
+
+footer
+{
+    max-width:100%;
+    color:white;
+    letter-spacing:0.1em;
+    font-size:0.5em;
+    font-style:italic;
+    text-align:center;
+}
+
+h1
+{
+    text-align:center;
+    font-size:3em;
+    padding:10px;
+    font-weight:bold;
+}
+
+p.helptext
+{
+    width:40%;
+    font-size:0.8em;
+    text-align:left;
+    color:#333;
+    line-height:20px;
+}
+
+#formtext
+{
+    display:block;
+    float:left;
+    margin-top:20px;
+}
+
+.formular
+{
+    display:block;
+    float:right;
+    width:50%;
+    margin-top:20px;
+    padding:10px;
+    border:1px ridge #CDCDBE;
+    border-radius:5px;
+}
+
+input
+{
+    width:95%;
+}
+
+textarea
+{
+    max-width:95%;
+}
+
+select
+{
+    max-width:95%;
+}

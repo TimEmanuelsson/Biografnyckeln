@@ -9,7 +9,6 @@
         <link rel="stylesheet" media="only screen and (max-width:481px)" href="../css/stilmall.css" />
     </head>
     <body>
-    <div id="container">    
 
         <header>
             </header>
@@ -18,10 +17,10 @@
             <ul>
         
                 <li><a href="1start.html">Start</a></li>
-                <li><a href="2kommande.html">Kommande filmer</a></li>
+                <li><a href="2kommande.html">Kommande</a></li>
                 <li><a href="3biljett.html" class="current">Köp biljett</a></li>
                 <li><a href="4hitta.html">Hitta hit</a></li>
-                <li><a href="5kontakta.html">Kontakta oss</a></li>
+                <li><a href="5kontakta.html">Kontakta</a></li>
                 <li><a id="gotobiljett" href="6faq.html">FAQ</a></li>
                 
             </ul>
@@ -32,9 +31,8 @@
             <h1 >Köp biljett</h1>
                             <!-- Här kan kunden välja film, hur många biljetter, vilken rad och vilket stolsnummer. Därefter kan kunden även skriva in sitt namn och telefonnumret biljetten ska skickas till. Sedan trycker man på "Till kassa" för att komma till kassa-sidan."-->
 
-            <p class="helptext">Här väljer du vilken film du vill köpa biljetter till. Därefter har du möjlighet att välja antal biljetter och vilken rad du vill sitta på.</p> <p class="helptext">I de två nedersta text fälten skriver du sedan in ditt fullständiga namn och det mobilnummer du vill att dina biljetter ska skickas till. Du visar sedan upp det mottagna texmeddelandet i kassan när du kommer hit.</p> <p class="helptext">Slutligen trycker du på "Till kassan"-knappen för att gå vidare till betalningmetoderna, där du också som först får bekräfta ditt köp.</p>
-</p>
-                <form>
+            <p id="formtext" class="helptext">Här väljer du vilken film du vill köpa biljetter till. Därefter har du möjlighet att välja antal biljetter och vilken rad du vill sitta på. I de två nedersta text fälten skriver du sedan in ditt fullständiga namn och det mobilnummer du vill att dina biljetter ska skickas till. Du visar sedan upp det mottagna texmeddelandet i kassan när du kommer hit. Slutligen trycker du på "Till kassan"-knappen för att gå vidare till betalningmetoderna, där du också som först får bekräfta ditt köp.</p>
+                <form class="formular">
                     <div class="field"><label for="movie">Välj film:</label></div>
                     <select id="selection" name="moviechoice">
                     <option value="">Tryck för att välja film..</option>
@@ -89,6 +87,5 @@
     <footer>
         Ansvarig utgivare: Andreas Lengqvist och Tim Emanuelsson - Copyright 2013 - Biograf Nyckeln -
     </footer>
-    </div>
     </body>
 </html>

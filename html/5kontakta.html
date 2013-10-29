@@ -17,10 +17,10 @@
             <ul>
         
                 <li><a href="1start.html">Start</a></li>
-                <li><a href="2kommande.html">Kommande filmer</a></li>
+                <li><a href="2kommande.html">Kommande</a></li>
                 <li><a href="3biljett.html">Köp biljett</a></li>
                 <li><a href="4hitta.html">Hitta hit</a></li>
-                <li><a href="5kontakta.html" class="current">Kontakta oss</a></li>
+                <li><a href="5kontakta.html" class="current">Kontakta</a></li>
                 <li><a href="6faq.html">FAQ</a></li>
                 
             </ul>
@@ -29,12 +29,12 @@
 <!-- Här ligger sidans unika kod-->
         <main>
             <h1>Kontakta oss</h1>
-            <p class="helptext">Här kan du på ett enkelt sätt kontakta oss. Var noga med att skriva in dina kontaktuppgifter korrekt så att vi har möjlighet att kontakta dig med svaret på dina frågor.</p>
-            <form>
+            <p id="formtext" class="helptext">Här kan du på ett enkelt sätt kontakta oss. Var noga med att skriva in dina kontaktuppgifter korrekt så att vi har möjlighet att kontakta dig med svaret på dina frågor.</p>
+            <form class="formular">
                
                 <div class="field"><label for="name">Namn:</label></div>   <input type="text" name="name" placeholder="Ditt för- och efternamn..">
-                <div class="field"><label for="mail">E-post:</label></div> <input type="mail" name="mail" placeholder="Din e-postadress..">
-                <div class="field"><label for="question">Fråga:</label></div>  <textarea type="text" name="question" cols="30" rows="5" placeholder="Din fråga.."></textarea>
+                <div class="field"><label for="email">E-post:</label></div> <input type="email" name="email" placeholder="Din e-postadress..">
+                <div class="field"><label for="question">Fråga:</label></div>  <textarea type="text" name="question" cols="100" rows="5" placeholder="Din fråga.."></textarea>
                 <button type=submit>Skicka fråga</button>
                 
             </form>
