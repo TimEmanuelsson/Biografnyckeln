@@ -1,6 +1,6 @@
 body
 {
-    background:#141414;
+    background:black;
     font-family: "Helvetica", sans-serif;
 }
 
@@ -9,7 +9,7 @@ header
     position:absolute;
     right:0%;
     top:5%;
-    background:url('../bilder/biohead4.png') no-repeat;
+    background:url('../bilder/biohead5.png') no-repeat;
     background-size:80px 373px;
     width:80px;
     height:373px;
@@ -19,6 +19,12 @@ header
 #container
 {
     width:60%;
+    margin:0 auto;
+}
+
+#container2
+{
+    width:90%;
     margin:0 auto;
 }
 
@@ -136,7 +142,9 @@ main
 
 main#moviemain
 {
-    background:#141414;
+    background:black;
+
+
     border:none;
     box-shadow:none;
 }
@@ -166,7 +174,7 @@ p.helptext
     width:40%;
     font-size:0.8em;
     text-align:left;
-    color:#333;
+    color:#7D7D6E;
     line-height:20px;
     margin-top:20px;
 }
@@ -250,4 +258,71 @@ dd
     margin-bottom:40px;
     color:#333;
     line-height:20px;
+}
+
+
+
+.galleryimg
+{
+    margin:40px;
+}
+
+img
+{
+    width:200px;
+}
+
+.movieposters a
+{
+    float:left;
+    padding:10px 10px 25px;
+    background:white;
+    text-decoration:none;
+    color:black;
+    text-align:center;
+    margin: 0 15px 30px;
+    -webkit-box-shadow: 0 8px 15px;
+    -moz-box-shadow:0 8px 15px;
+    box-shadow:0 8px 15px;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+    position:relative;
+}
+
+.movieposters a:after 
+{
+    content: attr(title);
+    display:block;
+}
+
+.movieposters a:nth-child(even)
+{
+    -webkit-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+
+a:nth-child(3n)
+{
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    transform:rotate(4deg);
+}
+
+
+.movieposters a:hover
+{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index:100;
+    -webkit-box-shadow: 0 8px 40px;
+    -moz-box-shadow:0 8px 40px;
+    box-shadow:0 8px 40px;
+    
 }

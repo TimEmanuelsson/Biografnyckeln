@@ -11,7 +11,7 @@
         <link rel="stylesheet" media="only screen and (max-width:481px)" href="../css/stilmall.css" />
     </head>
     <body>
-    <div id="container">
+    <div id="container2">
 
         <header>
             </header>
@@ -34,102 +34,11 @@
         
             <h1>Kommande filmer</h1>
                 
-                                
-                <div class="containern">
-                    <div class="card">
-                        <div class="face face1"></div>
-                        <div class="face face2"></div>
-                    </div>
-                
-                    <ul class="store">
-                        <li>
-                            <div class="content content1">1</div>
-                        </li>
-                        <li>
-                            <div class="content content2">i</div>
-                        </li>
-                        <li>
-                            <div class="content content3">3</div>
-                        </li>
-                        <li>
-                            <div class="content content4">4</div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="buttons">
-                    <input type="button" id="flip1" value="Poster"/>
-                    <input type="button" id="flip2" value="Mer info"/>
-                    <input type="button" value="Köp biljett" onclick="location.href='3biljett.html#gotobiljett';">
-                    <input type="button" id="flip3" value="Se trailer"/>
-                </div>
-                
-                    <div class="containern">
-                    <div class="card">
-                        <div class="face face1"></div>
-                        <div class="face face2"></div>
-                    </div>
-                
-                    <ul class="store">
-                        <li>
-                            <div class="content content1">1</div>
-                        </li>
-                        <li>
-                            <div class="content content2">i</div>
-                        </li>
-                        <li>
-                            <div class="content content3">3</div>
-                        </li>
-                        <li>
-                            <div class="content content4">4</div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="buttons">
-                    <input type="button" id="flip1" value="Poster"/>
-                    <input type="button" id="flip2" value="Mer info"/>
-                    <input type="button" value="Köp biljett" onclick="location.href='3biljett.html#gotobiljett';">
-                    <input type="button" id="flip3" value="Se trailer"/>
-                </div>
-                    
-        </main>
-
-<script type="text/javascript">//<![CDATA[ 
-$(window).load(function(){
-var topCard = 1;
-var facingUp = true;
-
-function flipCard(n) {
-    if (topCard === n) return;
-
-    // Replace the contents of the current back-face with the contents
-    // of the element that should rotate into view.
-    var curBackFace = $('.' + (facingUp ? 'face2' : 'face1'));
-    var nextContent = $('.store' + n).html(); 
-    var nextContent = $('.store li:nth-child(' + n + ')').html(); 
-    curBackFace.html(nextContent);
-
-    // Rotate the content
-    $('.card').toggleClass('flipped');
-    topCard = n;
-    facingUp = !facingUp;
-}
-
-$('#flip1').on('click', function(){ flipCard(1); });
-$('#flip2').on('click', function(){ flipCard(2); });
-$('#flip3').on('click', function(){ flipCard(3); });
-
-$(document).ready(function(){
-    // Add the appropriate content to the initial "front side"
-    var frontFace = $('.face1');
-    var frontContent = $('.store li:first-child').html(); 
-    frontFace.html(frontContent);
-});
-
-});//]]>  
-
-</script>
+            <div class="movieposters">
+            
+                <a href="../bilder/hobbit_2.jpg" title="Nya äventyr med Bilbo!"><img src="../bilder/hobbit_2.jpg" alt="The Hobbit" /></a>
+            </div>                 
+ 
 
 
     <footer>
