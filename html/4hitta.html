@@ -4,14 +4,48 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width:device-width, initial-scale=1" /> 
         <title>Biograf Nyckeln</title>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" media="screen and (min-width:481px)" href="../css/stilmall_webb.css" />
         <link rel="stylesheet" media="only screen and (max-width:481px)" href="../css/stilmall.css" />
-        
-        <script src="http://maps.google.com/maps/api/js?sensor=false">
 
-        </script>
-        <script>
+    <style>
+    #mapPlaceholder {
+        height: 450px;
+        max-width: 100%;
+    }
+    </style>
+    
+    <body>
+    <div id="container">
+
+        <header>
+            </header>
+            
+        <nav id="headmenu">
+            <ul>
+        
+                <li><a href="1start.html">Start</a></li>
+                <li><a href="2kommande.html">Kommande</a></li>
+                <li><a href="3biljett.html">Köp biljett</a></li>
+                <li><a href="4hitta.html" class="current">Hitta hit</a></li>
+                <li><a href="6faq.html">FAQ</a></li>
+                <li><a href="5kontakta.html">Kontakt</a></li>
+                
+            </ul>
+        </nav>
+
+<!-- Här ligger sidans unika kod-->
+        <main>
+            <h1>Hitta till oss</h1>
+            
+<!-- Div-tagg som utgör själva kartan-->
+        <div id="mapPlaceholder"></div>
+            
+        </main>        
+        
+<!-- Javascript som visar en googlemap med kartafunktion. -->
+     <script>
             if (navigator.geolocation)
             {
                 navigator.geolocation.getCurrentPosition(showCurrentLocation);
@@ -46,47 +80,7 @@
             title: "Din position!"
             });
             }
-        </script>
-
-    <style>
-    #mapPlaceholder {
-        height: 450px;
-        max-width: 100%;
-    }
-    </style>
-    
-    <body>
-    <div id="container">
-
-        <header>
-            </header>
-            
-        <nav id="headmenu">
-            <ul>
-        
-                <li><a href="1start.html">Start</a></li>
-                <li><a href="2kommande.html">Kommande</a></li>
-                <li><a href="3biljett.html">Köp biljett</a></li>
-                <li><a href="4hitta.html" class="current">Hitta hit</a></li>
-                <li><a href="6faq.html">FAQ</a></li>
-                <li><a href="5kontakta.html">Kontakt</a></li>
-                
-            </ul>
-        </nav>
-
-<!-- Här ligger sidans unika kod-->
-        <main>
-            <h1>Hitta till oss</h1>
-            
-
-        <div id="mapPlaceholder"></div>
-            
-            <!--Testa om du hittar någon kod med javascript för att länka in en sån där karta med massa funktioner på. Hade varit grymt! Annars får vi bara köra på
-            en vanlig karta som bild. Se till så den inte är förstor bara så att den får plats i ett mobilfönster. max-width:100% du vet.-->
-            
-        </main>        
-        
-       
+        </script>   
         
     <footer>
         Ansvarig utgivare: Andreas Lengqvist och Tim Emanuelsson - Copyright 2013 - Biograf Nyckeln -
