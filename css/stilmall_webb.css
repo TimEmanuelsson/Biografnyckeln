@@ -15,7 +15,7 @@ header
     position:absolute;
     right:0%;
     top:7%;
-    background:url('../bilder/biohead5.png') no-repeat;
+    background:url('../bilder/biohead.png') no-repeat;
     background-size:80px 373px;
     width:80px;
     height:373px;
@@ -132,8 +132,6 @@ main
     overflow:auto;
     clear:both;
     margin:0 auto;
-    margin-bottom:50px;
-    padding:20px;
     background:#F5F5E6;
     border-left:1px solid#B9B9AA;
     border-top:1px solid#B9B9AA;
@@ -157,16 +155,19 @@ main#moviemain
 
 img
 {
-    width:231px;
-    height:341px;
+    width:301px;
+    height:411px;
+    padding:5px 0px 5px 0px;
 }
 
 .movieposters
 {
     text-align:center;
     float:left;
+    width:301px;
+    height:670px;
     background:#F5F5E6;
-    padding:10px 10px 10px 10px;
+    padding:10px 20px 10px 20px;
     margin:30px;
     border-left:1px solid#B9B9AA;
     border-top:1px solid#B9B9AA;
@@ -174,19 +175,37 @@ img
     border-bottom:2px ridge #B9B9AA;
     border-radius:12px;
     box-shadow:5px 5px 10px black;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+}
+
+.movieposters form
+{
+    display:inline;
+}
+
+.movieposters input[type=submit]
+{
+    margin-top:3px;
+    margin-left:5px;
+    padding:4px;
+    font-size: 0.9em; 
+    font-weight:bold;
+    line-height:1.5em;
+    color: #333;
+    width:92px;
 }
 
 
 footer
 {
     clear:both;
+    margin-top:50px;
     max-width:100%;
     color:white;
     letter-spacing:0.1em;
     font-size:0.5em;
     font-style:italic;
     text-align:center;
-    margin:20px;
 }
 
 h1
@@ -198,14 +217,39 @@ h1
     color:#292929;
 }
 
+h2
+{
+    font-size:1.3em;
+    font-weight:bold;
+    padding-bottom:5px;
+}
+
+h3
+{
+    font-size:1.2em;
+    text-align:left;
+    color:#303030;
+}
+
+.movieposters p
+{
+    font-size:0.9em;
+    text-align:left;
+    line-height:1.3em;
+    padding:5px;
+    height:160px;
+    color:#303030;
+}
+
 p.helptext
 {
     width:40%;
     font-size:0.8em;
     text-align:left;
-    color:#7D7D6E;
+    color:#303030;
     line-height:20px;
     margin-top:20px;
+    margin-left:20px;
 }
 
 #formtext
@@ -228,7 +272,7 @@ p.helptext
 input
 {
     width:95%;
-        margin-bottom:5px;
+    margin-bottom:5px;
 }
 
 textarea

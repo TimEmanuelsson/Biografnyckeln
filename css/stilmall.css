@@ -1,8 +1,15 @@
 body
 {
     font-family: "Helvetica", sans-serif;
-    background:#F5F5E6;
+    background:black;
     margin:auto;
+}
+
+
+#container2
+{
+    max-width:100%;
+    text-align:center;
 }
 
 header
@@ -61,8 +68,34 @@ nav#headmenu a.current:hover
     background:white;
 }
 
+main
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    background:#F5F5E6;
+    height:100%;
+    padding:0px 20px 0px 20px;
+    border-left:1px solid#B9B9AA;
+    border-top:1px solid#B9B9AA;
+    border-right:2px ridge #B9B9AA;
+    border-bottom:2px ridge #B9B9AA;
+    border-radius:12px;
+    box-shadow:5px 5px 10px black;
+}
+
+main#moviemain
+{
+    background:black;
+    border:none;
+    padding:0 5px 0 5px;
+    border-radius:0px;
+    box-shadow:none;
+}
+
+
 footer
 {
+    color:white;
     font-size:0.6em;
     font-style:italic;
     text-align:center;
@@ -84,7 +117,7 @@ h1
     margin-top:30px;
     font-size:2em;
     text-align:left;
-    color:#292929;
+    color:#474747;
 }
 
 p.helptext
@@ -112,8 +145,10 @@ input[type=text], input[type=email], input[type=tel], input[type=number], select
   -webkit-appearance: none; -moz-appearance: none;
   display: block;
   margin: 0;
-  width: 100%; height: 40px;
-  line-height: 20px; font-size: 17px;
+  width: 100%; 
+  height: 40px;
+  line-height: 20px; 
+  font-size: 17px;
   border: 1px solid #bbb;
   padding-left:2px;
 }
@@ -147,10 +182,10 @@ button
  
  margin: 1.5em;
  margin-left:2px;
- font-size: 1em; line-height: 2.5em;
+ font-size: 1em; line-height: 2.0em;
  color: #333;
  font-weight: bold;
- height: 2.5em; width: 100%;
+ height: 2.0em; width: 100%;
  background: #fdfdfd; background: -moz-linear-gradient(top, #fdfdfd 0%, #bebebe 100%); 
  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#bebebe)); 
  background: -webkit-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
@@ -234,68 +269,82 @@ img
     max-width:100%;
 }
 
-
-
-
-.container {
-    position: relative;
-    width: 200px;
-    height: 260px;
-    margin: 0 auto 40px auto;
-
-    -webkit-perspective: 800px;
-       -moz-perspective: 800px;
-        -ms-perspective: 800px;
-         -o-perspective: 800px;
-            perspective: 800px;
+h1
+{
+    text-align:center;
+    font-size:3em;
+    padding:10px;
+    font-weight:bold;
+    color:#292929;
 }
-.container .card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
 
-    -webkit-transition: -webkit-transform 2s;
-       -moz-transition:    -moz-transform 2s;
-        -ms-transition:     -ms-transform 2s;
-         -o-transition:      -o-transform 2s;
-            transition:         transform 2s;
-
-    -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-        -ms-transform-style: preserve-3d;
-         -o-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+h2
+{
+    font-size:1.3em;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:20px;
 }
-.container .card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 140px;
+
+h3
+{
+    font-size:1.2em;
+    text-align:left;
+    color:#303030;
+    padding-bottom:5px;
+}
+
+
+.movieposters
+{
+    text-align:center;
+    background:#F5F5E6;
+    height:100%;
+    margin-bottom:15px;
+    padding:0px 20px 0px 20px;
+    border-left:1px solid#B9B9AA;
+    border-top:1px solid#B9B9AA;
+    border-right:2px ridge #B9B9AA;
+    border-bottom:2px ridge #B9B9AA;
+    border-radius:12px;
+    box-shadow:5px 5px 10px black;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+}
+
+.movieposters p
+{
+    font-size:0.9em;
+    text-align:left;
+    line-height:1.4em;
+    padding:5px;
+    color:#303030;
+}
+
+.movieposters input[type=submit]
+{
+    -webkit-appearance: none; -moz-appearance: none;
+    display: block;
+    margin-left:2px;
+    font-size: 1em; 
+    line-height: 2.0em;
+    color: #333;
     font-weight: bold;
-    line-height: 260px;
-    color: #fff;
-    text-align: center;
+    height: 2.0em; 
+    width: 100%;
+    background: #fdfdfd; background: -moz-linear-gradient(top, #fdfdfd 0%, #bebebe 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#bebebe)); 
+    background: -webkit-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+    background: -o-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+    background: -ms-linear-gradient(top, #fdfdfd 0%,#bebebe 100%); 
+    background: linear-gradient(to bottom, #fdfdfd 0%,#bebebe 100%);
+    border: 1px solid #bbb;
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    border-radius: 8px;
+}
 
-}
-.container .card.flipped,
-.container .card .face2 {
-    -webkit-transform: rotateY(180deg);
-       -moz-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-         -o-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-}
-.container .card .face .content1 {background-image:url('../bilder/hobbit_2.jpg');}
-.container .card .face .content1 {background-size: 350px 300px;}
-.container .card .face .content1 {background-repeat:no-repeat;}
-.container .card .face .content2 {background-color: #7da;}
-.container .card .face .content3 {background-color: #d7a;}
-.container .card .face .content4 {background-color: #fad997;}
-
-.store {
-    display: none;
-}
-.buttons {
-    text-align: center;
+/* Test-länk*/
+.testul
+{
+    display:none;
 }
