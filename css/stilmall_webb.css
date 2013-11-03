@@ -2,6 +2,7 @@ body
 {
     background:black;
     font-family: "Helvetica", sans-serif;
+     height:100%;
 }
 
 #mapPlaceholder 
@@ -97,6 +98,7 @@ nav#headmenu a.current
     background: -o-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
     background: -ms-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
     background: linear-gradient(to bottom, #E1E1E1 0%,#FFFFFF 100%);
+    box-shadow:5px 10px 20px;
 }
 
 nav#headmenu a:hover
@@ -129,7 +131,7 @@ nav#headmenu a.current:hover
 
 main
 {
-    overflow:auto;
+    overflow:hidden;
     clear:both;
     margin:0 auto;
     background:#F5F5E6;
@@ -149,8 +151,8 @@ main#moviemain
     border:none;
     border-radius:0px;
     box-shadow:none;
-    max-width:100%;
     margin-left:70px;
+    max-width:100%;
 }
 
 img
@@ -164,11 +166,11 @@ img
 {
     text-align:center;
     float:left;
-    width:301px;
-    height:670px;
+    max-width:301px;
+    max-height:670px;
     background:#F5F5E6;
     padding:10px 20px 10px 20px;
-    margin:30px;
+    margin:30px 30px 0 30px;
     border-left:1px solid#B9B9AA;
     border-top:1px solid#B9B9AA;
     border-right:2px ridge #B9B9AA;
@@ -199,8 +201,8 @@ img
 footer
 {
     clear:both;
-    margin-top:50px;
     max-width:100%;
+    margin:20px;
     color:white;
     letter-spacing:0.1em;
     font-size:0.5em;
