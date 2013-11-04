@@ -2,14 +2,8 @@ body
 {
     background:black;
     font-family: "Helvetica", sans-serif;
-     height:100%;
 }
 
-#mapPlaceholder 
-{ 
-    height: 100%;
-    max-width: 100%;
-}
 
 header
 {
@@ -20,7 +14,6 @@ header
     background-size:80px 373px;
     width:80px;
     height:373px;
-    
 }
 
 #container
@@ -231,6 +224,11 @@ h3
     font-size:1.2em;
     text-align:left;
     color:#303030;
+}
+
+h4
+{
+    display:none;
 }
 
 .movieposters p
