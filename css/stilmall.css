@@ -136,7 +136,7 @@ p.helptext
     line-height:20px;
 }
 
-/*hjälptext med marginal. FIXAAAAAA*/
+/*hjälptext med marginal.*/
 p.helptext2
 {
     font-size:0.8em;
@@ -344,10 +344,4 @@ h3
     -webkit-border-radius: 8px; 
     -moz-border-radius: 8px; 
     border-radius: 8px;
-}
-
-/* Test-länk*/
-.testul
-{
-    display:none;
 }
