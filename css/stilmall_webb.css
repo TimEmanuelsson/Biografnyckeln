@@ -24,6 +24,7 @@ header
 
 #container2
 {
+    width:100%;
     margin: 0 auto;
 }
 
@@ -56,7 +57,7 @@ nav#headmenu li a
     padding:10px 25px 10px 25px;
     font-weight:normal;
     letter-spacing:0.1em;
-    box-shadow:4px 4px 7px black;
+    box-shadow:4px 7px 15px black;
     border-right:1px ridge gray;
     border-left:1px ridge #A5A596;
 
@@ -91,7 +92,7 @@ nav#headmenu a.current
     background: -o-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
     background: -ms-linear-gradient(top, #E1E1E1 0%,#FFFFFF 100%); 
     background: linear-gradient(to bottom, #E1E1E1 0%,#FFFFFF 100%);
-    box-shadow:5px 10px 20px;
+    box-shadow:5px 5px 7px;
 }
 
 nav#headmenu a:hover
@@ -198,7 +199,7 @@ footer
     margin:20px;
     color:white;
     letter-spacing:0.1em;
-    font-size:0.4em;
+    font-size:0.5em;
     font-style:italic;
     text-align:center;
 }
