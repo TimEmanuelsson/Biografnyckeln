@@ -1,3 +1,4 @@
+/*Mobilversion*/
 body
 {
     font-family: "Helvetica", sans-serif;
@@ -39,6 +40,7 @@ nav#headmenu
 
 }
 
+/*Egenskaper för meny*/
 nav#headmenu a
 {
     float:none;
@@ -123,14 +125,7 @@ ul
     list-style:none;
 }
 
-h1
-{
-    margin:10px;
-    margin-top:30px;
-    font-size:2em;
-    text-align:left;
-    color:#474747;
-}
+
 
 p.helptext
 {
@@ -151,7 +146,7 @@ p.helptext2
     line-height:20px;
 }
 
-
+/*Egenskaper för inputer*/
 input[type=text], input[type=email], input[type=tel], input[type=number], select
 {
   -webkit-appearance: none; -moz-appearance: none;
@@ -302,7 +297,7 @@ h3
     padding-bottom:5px;
 }
 
-
+/*Egenskaper för filmerna*/
 .movieposters
 {
     text-align:center;
