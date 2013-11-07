@@ -38,7 +38,7 @@
 
             <p id="formtext" class="helptext">Här väljer du vilken film du vill köpa biljetter till. Därefter har du möjlighet att välja antal biljetter och vilken rad du vill sitta på. I de två nedersta text fälten skriver du sedan in ditt fullständiga namn och det mobilnummer du vill att dina biljetter ska skickas till. Du visar sedan upp det mottagna texmeddelandet i kassan när du kommer hit. Slutligen trycker du på "Till kassan"-knappen för att gå vidare till betalningmetoderna, där du också som först får bekräfta ditt köp.</p>
                 <form class="formular">
-                    <div class="field"><label>Välj film:</label></div>
+                    <div class="field"><label for="selection">Välj film:</label></div>
                     <select id="selection" name="moviechoice">
                     <option value="">Tryck för att välja film..</option>
                     <option value="1">Gravity</option>
@@ -46,8 +46,8 @@
                     <option value="3">The Conjuring</option>
                     </select>
                     
-                    <div class="field"><label>Antal biljetter:</label></div>
-                    <select name="ticketchoice">
+                    <div class="field"><label for="tickets">Antal biljetter:</label></div>
+                    <select id="tickets" name="ticketchoice">
                     <option value="">Tryck för att välja antal biljetter..</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -58,8 +58,8 @@
                     <option value="7">7</option>
                     </select>
                     
-                    <div class="field"><label>Välj rad:</label></div>
-                    <select name="rowchoice">
+                    <div class="field"><label for="row">Välj rad:</label></div>
+                    <select id="row" name="rowchoice">
                     <option value="">Tryck för att välja rad..</option>
                     <option value="1">Rad 1</option>
                     <option value="2">Rad 2</option>
@@ -79,8 +79,8 @@
                     </select>
                     
 
-                <div class="field2"><label>Namn:</label></div>   <input type="text" name="name" placeholder="Ditt för- och efternamn..">
-                <div class="field"><label>Mobilnummer:</label></div>  <input type="tel" name="tel" placeholder="Ditt mobilnummer..">
+                <div class="field2"><label for="name">Namn:</label></div>   <input id="name" type="text" name="name" placeholder="Ditt för- och efternamn..">
+                <div class="field"><label for="telephone">Mobilnummer:</label></div>  <input id="telephone" type="tel" name="tel" placeholder="Ditt mobilnummer..">
                 <button type=submit>Till kassan</button>
             
         </form>
